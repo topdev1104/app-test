@@ -1,0 +1,778 @@
+.MultipleIcons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 10px
+}
+
+@media only screen and (max-width:767px) {
+    .MultipleIcons {
+        margin-right: 7px
+    }
+}
+
+.MultipleIcons .MultipleIcons__separator.MultipleIcons__separator,
+.MultipleIcons .TokenIcon img,
+.MultipleIcons img {
+    margin-right: 0
+}
+
+.MultipleIcons__symbols,
+.TokenIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.TokenIcon {
+    flex-direction: row
+}
+
+.TokenIcon__image {
+    margin-right: 10px
+}
+
+@media only screen and (max-width:767px) {
+    .TokenIcon__image {
+        margin-right: 7px
+    }
+}
+
+.TokenIcon__symbol {
+    font-weight: 600;
+    color: #2ebac6
+}
+
+.TokenIcon__dollar,
+.TokenIcon__name {
+    font-size: 18px;
+    color: #fff
+}
+
+@media only screen and (max-width:1799px) {
+    .TokenIcon__dollar,
+    .TokenIcon__name {
+        font-size: 16px
+    }
+}
+
+@media only screen and (max-width:1399px) {
+    .TokenIcon__dollar,
+    .TokenIcon__name {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    .TokenIcon__dollar,
+    .TokenIcon__name {
+        font-size: 16px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .TokenIcon__dollar,
+    .TokenIcon__name {
+        font-size: 12px
+    }
+}
+
+.TokenIcon__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left
+}
+
+@media only screen and (max-width:479px) {
+    .TokenIcon__name {
+        max-width: 90px
+    }
+}
+
+.TokenIcon__name b {
+    font-weight: 600
+}
+
+.TokenIcon__color-dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: -8px
+}
+
+.TokenIconWithFullName {
+    max-width: 100%;
+    position: relative
+}
+
+.TokenIcon__withSymbolAndName .TokenIcon__name b {
+    font-weight: 300
+}
+
+.TokenIcon__dark .TokenIcon__dollar,
+.TokenIcon__dark .TokenIcon__name,
+.TokenIcon__onWhiteBackground .TokenIcon__dollar,
+.TokenIcon__onWhiteBackground .TokenIcon__name {
+    color: #f1f1f3
+}
+
+.Timer {
+    font-size: 16px;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #383d51
+}
+
+@media only screen and (max-width:1799px) {
+    .Timer {
+        font-size: 12px
+    }
+}
+
+.AnimationArrow {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 5px
+}
+
+.AnimationArrow i {
+    position: absolute;
+    display: inline-block;
+    transition: all .2s ease
+}
+
+.AnimationArrow i:first-of-type {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.AnimationArrow i:last-of-type {
+    right: 0
+}
+
+.AnimationArrow__active i:first-of-type,
+.AnimationArrow i:last-of-type {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.AnimationArrow__active i:last-of-type {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.ReactModal__Overlay {
+    flex-direction: column;
+    background: transparent !important;
+    z-index: 99;
+    -webkit-backdrop-filter: blur(1.4rem);
+    backdrop-filter: blur(1.4rem)
+}
+
+.ReactModal__Content,
+.ReactModal__Overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.ReactModal__Content {
+    padding: 32px;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    border: none;
+    width: 626px;
+    max-width: 626px;
+    border-radius: 24px;
+    margin: 5px;
+    text-align: center;
+    outline: none;
+    background: linear-gradient(68deg, #0b0742 30%, #08052e 50%, #0b0742 70%);
+    box-shadow: 0 4px 4px rgba(4, 2, 27, .2);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px)
+}
+
+@media only screen and (max-width:767px) {
+    .ReactModal__Content {
+        padding: 30px 20px 40px
+    }
+}
+
+.BasicModal__dark.ReactModal__Content {
+    background: #f1f1f3
+}
+
+.BasicModal__close-wrapper {
+    position: absolute;
+    top: 14px;
+    right: 35px;
+    z-index: 5
+}
+
+.BasicModal__close {
+    border: 0;
+    background: transparent;
+    position: fixed;
+    transition: all .3s ease;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0;
+    margin: 0
+}
+
+.BasicModal__close img {
+    width: 13px;
+    height: 13px
+}
+
+@media only screen and (max-width:1799px) {
+    .BasicModal__close img {
+        width: 14px;
+        height: 14px
+    }
+}
+
+.BasicModal__close:hover {
+    opacity: .7
+}
+
+.BasicModal__close:active {
+    -webkit-transform: scale(.8);
+    transform: scale(.8)
+}
+
+@media only screen and (max-height:400px) {
+    .ReactModal__Content.ReactModal__Content--after-open {
+        position: absolute !important;
+        top: 5% !important;
+        bottom: 5% !important;
+        display: block;
+        overflow: auto !important
+    }
+}
+
+.ScrollBar>div:first-of-type {
+    overflow-x: hidden !important
+}
+
+.ScrollBar>div:nth-of-type(2) {
+    display: none !important
+}
+
+.ScrollBar>div:last-of-type {
+    border-radius: 10px !important;
+    opacity: 1
+}
+
+.Switcher__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.Switcher__label {
+    font-size: 16px;
+    margin-right: 10px
+}
+
+@media only screen and (max-width:1799px) {
+    .Switcher__label {
+        font-size: 12px;
+        margin-right: 5px
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    .Switcher__label {
+        font-size: 10px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .Switcher__label {
+        margin-right: 10px;
+        font-size: 14px
+    }
+}
+
+.Switcher .Switcher__swiperDisabled {
+    opacity: 1 !important
+}
+
+.CustomTooltip {
+    max-width: 550px;
+    display: block;
+    padding: 7px 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .16);
+    background: #383d51 !important
+}
+
+@media only screen and (max-width:1799px) {
+    .CustomTooltip {
+        max-width: 380px
+    }
+}
+
+.CustomTooltip:after {
+    border-top-color: #383d51 !important
+}
+
+.CustomTooltip__content {
+    font-size: 14px
+}
+
+@media only screen and (max-width:1799px) {
+    .CustomTooltip__content {
+        font-size: 10px
+    }
+}
+
+.CustomTooltip__dark {
+    background: #2b2d3c !important
+}
+
+.CustomTooltip__dark:after {
+    border-top-color: #2b2d3c !important
+}
+
+.DropdownWrapper {
+    position: relative;
+    z-index: 2
+}
+
+.DropdownWrapper__bottom .DropdownWrapper__content {
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    top: calc(100% + 10px)
+}
+
+.DropdownWrapper__top .DropdownWrapper__content {
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    bottom: calc(100% + 10px)
+}
+
+.DropdownWrapper__left .DropdownWrapper__content {
+    left: 0
+}
+
+.DropdownWrapper__right .DropdownWrapper__content {
+    right: 0
+}
+
+.DropdownWrapper__center .DropdownWrapper__content {
+    left: 50%;
+    -webkit-transform: translateX(-50%) scaleY(0);
+    transform: translateX(-50%) scaleY(0)
+}
+
+.DropdownWrapper__center .DropdownWrapper__contentVisible {
+    -webkit-transform: translateX(-50%) scaleY(1);
+    transform: translateX(-50%) scaleY(1)
+}
+
+.DropdownWrapper__content {
+    background: #fff;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1)
+}
+
+.DropdownWrapper__contentVisible {
+    height: auto;
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1)
+}
+
+.Button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .16);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 12px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.Button,
+.Button:after {
+    border-radius: 2px;
+    transition: all .2s ease
+}
+
+.Button:after {
+    content: "";
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    background: inherit;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.Button:hover:after {
+    opacity: 1
+}
+
+.Button:active {
+    opacity: .8
+}
+
+.Button:active:after {
+    opacity: 0
+}
+
+.Button:disabled {
+    cursor: not-allowed;
+    transition: none;
+    box-shadow: none
+}
+
+.Button:disabled:after {
+    display: none
+}
+
+.Button:disabled:active {
+    opacity: 1
+}
+
+.Button__wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2
+}
+
+.Button__big,
+.Button__medium {
+    width: 160px;
+    min-height: 40px
+}
+
+.Button__medium {
+    font-size: 14px
+}
+
+@media only screen and (max-width:1799px) {
+    .Button__medium {
+        width: 120px;
+        min-height: 32px;
+        font-size: 12px
+    }
+}
+
+.Button__normal,
+.Button__small {
+    font-size: 10px
+}
+
+.Button__normal {
+    width: 90px;
+    min-height: 30px
+}
+
+.Button__small {
+    width: 70px;
+    min-height: 24px
+}
+
+@media only screen and (max-width:767px) {
+    .Button__small {
+        width: 120px;
+        min-height: 36px;
+        font-size: 12px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .Button__mobileBig {
+        width: 300px;
+        min-height: 50px;
+        font-size: 14px
+    }
+}
+
+.Button__gradient {
+    border: none !important
+}
+
+.Button__gradient:hover:after {
+    opacity: .4
+}
+
+.Button__gradient:after {
+    opacity: 1
+}
+
+.Button * {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.LabeledSwitch {
+    border-radius: 1px;
+    padding: 1px;
+    position: relative
+}
+
+.LabeledSwitch__pointer {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 40px;
+    transition: all .4s ease;
+    padding: 4px 2px;
+    margin-top: 9px;
+    margin-left: 16px
+}
+
+.LabeledSwitch__pointer span {
+    display: block;
+    border-radius: 1px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .1)
+}
+
+.LabeledSwitch__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 24px;
+    padding: 8px 16px;
+    height: 56px
+}
+
+.LabeledSwitch button {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    transition: all .4s ease;
+    display: inline-block;
+    padding: 1px 2px 2px
+}
+
+.LabeledSwitch button p {
+    display: inline-block;
+    margin: 0
+}
+
+.LabeledSwitch button p span {
+    display: block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.LabeledSwitch__buttonActive p span {
+    font-weight: 600
+}
+
+.LabeledSwitch__buttonLeft {
+    width: 51px !important
+}
+
+.LabeledSwitchDisabled button {
+    cursor: default
+}
+
+.SpinLoader {
+    height: 10px;
+    width: 10px;
+    position: relative
+}
+
+.ball-spin-fade-loader>div {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    margin: 1px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute
+}
+
+@-webkit-keyframes ball-spin-fade-loader {
+    50% {
+        opacity: .3;
+        -webkit-transform: scale(.4);
+        transform: scale(.4)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes ball-spin-fade-loader {
+    50% {
+        opacity: .3;
+        -webkit-transform: scale(.4);
+        transform: scale(.4)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.ball-spin-fade-loader>div:first-child {
+    top: 7px;
+    left: 0;
+    -webkit-animation: ball-spin-fade-loader 1s linear -.96s infinite;
+    animation: ball-spin-fade-loader 1s linear -.96s infinite
+}
+
+.ball-spin-fade-loader>div:nth-child(2) {
+    top: 5px;
+    left: 5px;
+    -webkit-animation: ball-spin-fade-loader 1s linear -.84s infinite;
+    animation: ball-spin-fade-loader 1s linear -.84s infinite
+}
+
+.ball-spin-fade-loader>div:nth-child(3) {
+    top: 0;
+    left: 7px;
+    -webkit-animation: ball-spin-fade-loader 1s linear -.72s infinite;
+    animation: ball-spin-fade-loader 1s linear -.72s infinite
+}
+
+.ball-spin-fade-loader>div:nth-child(4) {
+    top: -5px;
+    left: 5px;
+    -webkit-animation: ball-spin-fade-loader 1s linear -.6s infinite;
+    animation: ball-spin-fade-loader 1s linear -.6s infinite
+}
+
+.ball-spin-fade-loader>div:nth-child(5) {
+    top: -7px;
+    left: 0;
+    -webkit-animation: ball-spin-fade-loader 1s linear -.48s infinite;
+    animation: ball-spin-fade-loader 1s linear -.48s infinite
+}
+
+.ball-spin-fade-loader>div:nth-child(6) {
+    top: -5px;
+    left: -5px;
+    -webkit-animation: ball-spin-fade-loader 1s linear -.36s infinite;
+    animation: ball-spin-fade-loader 1s linear -.36s infinite
+}
+
+.ball-spin-fade-loader>div:nth-child(7) {
+    top: 0;
+    left: -7px;
+    -webkit-animation: ball-spin-fade-loader 1s linear -.24s infinite;
+    animation: ball-spin-fade-loader 1s linear -.24s infinite
+}
+
+.ball-spin-fade-loader>div:nth-child(8) {
+    top: 5px;
+    left: -5px;
+    -webkit-animation: ball-spin-fade-loader 1s linear -.12s infinite;
+    animation: ball-spin-fade-loader 1s linear -.12s infinite
+}
+
+.SocialIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.SocialIcons a:hover {
+    opacity: .5
+}
+
+.SocialIcons a.SocialIcon__withTitle {
+    display: flex;
+    align-items: center
+}
+
+.SocialIcons a.SocialIcon__withTitle span {
+    font-size: 16px;
+    margin-left: 10px
+}
+
+.DarkModeSwitcher {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px
+}
+
+.DarkModeSwitcher input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.DarkModeSwitcher .DarkModeSwitcher__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #383d51;
+    border-radius: 25px
+}
+
+.DarkModeSwitcher .DarkModeSwitcher__slider img {
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    transition: .3s;
+    border-radius: 50%
+}
+
+.DarkModeSwitcher input:checked+.DarkModeSwitcher__slider img {
+    -webkit-transform: translateX(18px);
+    transform: translateX(18px)
+}
+
+.DarkModeSwitcher__active .DarkModeSwitcher__slider {
+    background-color: #f1f1f3
+}
+
+/*# sourceMappingURL=main.db3c67e8.chunk.css.map */
